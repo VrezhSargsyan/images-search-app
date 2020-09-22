@@ -1,4 +1,3 @@
-This project was generated with [@angular/cli](https://github.com/angular/angular-cli) version 9.1.10
 ## What is included?
 
 - Tools and Components
