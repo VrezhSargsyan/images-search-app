@@ -24,11 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
@@ -122,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "images-search-app"
+    }
+  },
+  "defaultProject": "images-search-app",
+  "cli": {
+    "analytics": "16a6c53c-0505-4909-8516-da415f38e594"
+  }
 }

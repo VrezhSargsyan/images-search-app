@@ -1,0 +1,19 @@
+<div class="overlay" *ngIf="imageData">
+  <div class="popup">
+    <form [formGroup]="formGroup">
+      <div class="inner-wrapper">
+        <ul *ngFor="let item of favoriteList">
+          <li>
+            <span (click)="selectFavoriteItem(item)">{{item.title}}</span>
+          </li>
+        </ul>
+
+        <div>
+          <input formControlName="new_favorite_item" type="text">
+          <button (click)="createNewFavorite()">Add new List</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

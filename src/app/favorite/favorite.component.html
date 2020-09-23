@@ -1,0 +1,38 @@
+<div class="favorite-container">
+  <form [formGroup]="formGroup" *ngIf="showFormGroup">
+    <div class="inner-wrapper">
+      <div class="input-field">
+        <label for="title">Edit Title:</label>
+        <input type="text" formControlName="title" id="title">
+      </div>
+
+      <div class="input-field">
+        <label for="description">Edit Description:</label>
+        <input type="text" formControlName="description" id="description">
+      </div>
+      <button (click)="saveFavoriteItem()">Save</button>
+    </div>
+  </form>
+
+  <div class="inner-wrapper inner-wrapper-noEditable">
+    <ul>
+      <li *ngFor="let item of favoriteList">
+        <ul class="img-wrapper">
+          <li *ngFor="let image of item.images">
+            <div>
+              <label>Title: {{item.title}}</label>
+              <label>Description: {{item.description}}</label>
+
+              <button (click)="editFavoriteItem(item)">Edit</button>
+            </div>
+
+            <span (click)="downloadImage(image.urls.thumb, image.alt_description)">
+                <img [src]="image.urls.thumb" [alt]="image.alt_description">
+              <span class="image-description">{{image.alt_description}}</span>
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
