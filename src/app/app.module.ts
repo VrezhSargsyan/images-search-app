@@ -2,8 +2,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {ImageSearchRoutingModule} from '../modules/image-search/src/image-search-routing.module';
-import {ImageSearchModule} from '../modules/image-search';
 import {NavbarComponent} from './navbar/navbar.component';
 import {SearchComponent} from './search/search.component';
 import {FavoriteComponent} from './favorite/favorite.component';
@@ -28,8 +26,6 @@ import {ReactiveFormsModule} from '@angular/forms';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    ImageSearchModule,
-    ImageSearchRoutingModule,
     StoreModule.forRoot({favorite: favoriteReducer, images: imagesReducer}),
     EffectsModule.forRoot([ImagesEffects]),
     HttpClientModule,

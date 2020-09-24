@@ -1,8 +1,6 @@
 ## What is included?
 
-- Tools and Components
-    - [Bootstrap](https://getbootstrap.com/) - Bootstrap, the world’s most popular front-end open source toolkit, 
-        featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.        
+- Tools and Components      
     - [SCSS](http://sass-lang.com/) - Is the most mature, stable, and powerful professional grade CSS extension 
         language in the world.
     
